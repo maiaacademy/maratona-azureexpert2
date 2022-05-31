@@ -32,7 +32,7 @@ Para realizar as atividades do Hands-on estamos utilizando o Portal do Azure no 
 
     > **Note:** If you are using an Azure Pass subscription, you may not meet the vCPU quotas above. In this case, you can still complete the lab.
 
-## Crição do ambiente da Aplicação completa (On-premises) para Cloud Azure
+## Criação do ambiente da Aplicação completa (On-premises) para Cloud Azure
 
 1. Deploy the template **SmartHotelHost.json** to a new resource group. This template deploys a virtual machine running nested Hyper-V, with 4 nested VMs. This comprises the 'on-premises' environment which you will assess and migrate during this lab.
 
