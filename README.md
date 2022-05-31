@@ -3,7 +3,7 @@
 Um evento ao Vivo e 100% gratuito
 
 Inscreva-se para receber os materiais extras e o link das próximas aulas:
-[Clicando AQUI!](htts://guilhermemaia.com/inscricoes-maratona-jun22)
+[Clicando aqui no link](htts://guilhermemaia.com/inscricoes-maratona-jun22)
 
 **Hands-on Lab**
 
