@@ -67,7 +67,9 @@ Para realizar as atividades do Hands-on estamos utilizando o Portal do Azure em 
 
     ![Browser screenshot showing the SmartHotel application.](/AllFiles/Images/smarthotel.png)
 
-Primeira atualização 
+Assim que a Aplicação estiver funcionando você vai postar o **Print das evidências do ambiente e a imagem do [Badge](https://guilhermemaia.com/badge-maratona) de participação com a Hastash #MaratonaAzureExpert2 #Desafio1 no Linkedin**
+
+    ![Badge da Maratona.](/AllFiles/Images/badge-maratona.png)
 
 ## Arquitetura do Projeto Hands-on da Migração da Aplicação completa (On-premises) para o Azure
 
