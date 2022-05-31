@@ -11,7 +11,7 @@ Cadastre-se para receber os materiais extras e o link das próximas aulas:
 
 Para realizar as atividades do Hands-on estamos utilizando o Portal do Azure em idioma Inglês a fim de manter o padrão e não haver erros, e se necessário você pode abrir o Google Tradutor e traduzir caso tenha alguma dificuldade no entendimento.
 
-## Requisitos
+## Requisitos para criação do ambiente na sua assinatura do Azure
 
 1. You will need Owner or Contributor permissions for an Azure subscription to use in the lab.
 
