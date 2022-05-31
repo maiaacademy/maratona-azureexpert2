@@ -59,7 +59,7 @@ Para realizar as atividades do Hands-on estamos utilizando o Portal do Azure em 
 
 1. In **Server Manager**, select Tools, then **Hyper-V Manager** (if Server Manager does not open automatically, open it by selecting Start, then Server Manager). In Hyper-V Manager, select SMARTHOTELHOST. You should now see a list of the four VMs that comprise the on-premises SmartHotel application.
 
-    > **Note:** If the SmartHotel application VMs is not shown, wait 10 minutes and try again. It takes **at least 1 hour**.
+    > **Note:** If the SmartHotel application VMs in Hyper-V Manager is not shown, wait 30 minutes and try again. It takes **at least 1 hour** from the start of template deployment. You can also check the CPU, network and disk activity levels for the SmartHotelHost VM in the Azure portal, to see if the provisioning is still active.
 
 2. Make a note of the public IP address.
 
@@ -67,23 +67,19 @@ Para realizar as atividades do Hands-on estamos utilizando o Portal do Azure em 
 
     ![Browser screenshot showing the SmartHotel application.](/AllFiles/Images/smarthotel.png)
 
-    > **Note:** If the SmartHotel application is not shown, wait 10 minutes and try again. It takes **at least 1 hour** from the start of template deployment. You can also check the CPU, network and disk activity levels for the SmartHotelHost VM in the Azure portal, to see if the provisioning is still active.
-
-You should follow all steps provided *before* performing the Hands-on lab.
+Primeira atualização 
 
 ## Arquitetura do Projeto Hands-on da Migração da Aplicação completa (On-premises) para o Azure
 
-The SmartHotel application comprises 4 VMs hosted in Hyper-V:
+A Aplicação SmartHotel é composta por uma arquitetura em N camadas (N-Tier) no Hyper-V.
 
-- **Database tier** Hosted on the smarthotelSQL1 VM, which is running Windows Server 2016 and SQL Server 2017.
+- **Database tier** É a VM **smarthotelSQL1** da camada de Dados, executa o Windows Server 2016 e SQL Server 2017.
 
-- **Application tier** Hosted on the smarthotelweb2 VM, which is running Windows Server 2012 R2.
+- **Application tier** É a VM **smarthotelweb2** da camada de Aplicação, executa o Windows Server 2012 R2 e IIS Server.
 
-- **Web tier** Hosted on the smarthotelweb1 VM, which is running Windows Server 2012 R2.
+- **Web tier** É a VM **smarthotelweb1** da camada Web, executa o Windows Server 2012 R2 e IIS Server.
 
-- **Web proxy** Hosted on the  UbuntuWAF VM, which is running Nginx on Ubuntu 18.04 LTS.
-
-For simplicity, there is no redundancy in any of the tiers.
+- **Web proxy** É a VM **UbuntuWAF** da camada de Proxy e Firewall (WAF), executa o Nginx no Ubuntu 18.04 LTS.
 
 ![A slide shows the on-premises SmartHotel application architecture.](/AllFiles/Images/overview.png)
 
