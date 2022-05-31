@@ -30,7 +30,7 @@ Para realizar as atividades do Hands-on estamos utilizando o Portal do Azure no 
 
         - Total Regional vCPUs: **at least 14 vCPUs**.
 
-     > **AVISO:** Se você está utilizando uma **assinatura gratuita (Trial)** ou **Azure Pass** você não vai conseguir aumentar o limite de processadores (vCPUs) e sendo necessário seguir as instruções abaixo na **NOTA IMPORTANTE.**
+     > **NOTA:** Se você está utilizando uma **assinatura gratuita (Trial)** ou **Azure Pass** você não vai conseguir aumentar o limite de processadores (vCPUs) e sendo necessário seguir as instruções abaixo na **NOTA IMPORTANTE.**
 
 ## Criação do ambiente da Aplicação completa (On-premises) para Cloud Azure
 
