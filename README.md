@@ -4,7 +4,7 @@ Este é o repositório que contém os materiaias das atividades, desafios e Hand
 
 ## Desafio 1 - Criação do ambiente de Aplicação (On-premises) no Azure (tempo estimado de 30 a 60 minutos)
 
-Para realizar as atividades do Hands-on estamos utilizando o Portal do Azure em idioma Inglês a fim de manter o padrão e não haver erros, e se necessário você pode abrir o Google Tradutor e traduzir caso tenha alguma dificuldade no entendimento.
+Para realizar as atividades do Hands-on estamos utilizando o Portal do Azure no idioma Inglês a fim de manter o padrão e não haver erros, e se necessário você pode abrir o Google Tradutor e traduzir caso tenha alguma dificuldade no entendimento.
 
 ## Requisitos para criação do ambiente na sua assinatura do Azure
 
