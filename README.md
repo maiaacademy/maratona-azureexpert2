@@ -72,13 +72,13 @@ Para realizar as atividades do Hands-on estamos utilizando o Portal do Azure em 
 
 A Aplicação SmartHotel é composta por uma arquitetura em N camadas (N-Tier) no Hyper-V.
 
-- **Database tier** É a VM **smarthotelSQL1** da camada de Dados, executa o Windows Server 2016 e SQL Server 2017.
+- **Database tier** **SmartHotelSQL1** é a VM da camada de Dados, executa o Windows Server 2016 e SQL Server 2017.
 
-- **Application tier** É a VM **smarthotelweb2** da camada de Aplicação, executa o Windows Server 2012 R2 e IIS Server.
+- **Application tier** **SmartHotelWeb2** é a VM da camada de Aplicação, executa o Windows Server 2012 R2 e IIS Server.
 
-- **Web tier** É a VM **smarthotelweb1** da camada Web, executa o Windows Server 2012 R2 e IIS Server.
+- **Web tier** **SmartHotelWeb1** é a VM da camada Web, executa o Windows Server 2012 R2 e IIS Server.
 
-- **Web proxy** É a VM **UbuntuWAF** da camada de Proxy e Firewall (WAF), executa o Nginx no Ubuntu 18.04 LTS.
+- **Web proxy** **UbuntuWAF** é a VM da camada de Proxy e Firewall (WAF), executa o Nginx no Ubuntu 18.04 LTS.
 
 ![A slide shows the on-premises SmartHotel application architecture.](/AllFiles/Images/overview.png)
 
