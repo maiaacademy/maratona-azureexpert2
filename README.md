@@ -1,10 +1,6 @@
 # Maratona Azure Expert 2.0
 
-**Sejam muito bem-vindo(a) a Maratona Azure Expert 2.0**
-
-Um evento ao Vivo e 100% gratuito
-
-Este é o repositório que contém as atividades, Hands-on e desafios da Maratona.
+Este é o repositório que contém as atividades e desafios da Maratona.
 
 ## Desafio 1 - Criação do ambiente de Aplicação (On-premises) no Azure (tempo estimado de 30 a 60 minutos)
 
@@ -82,7 +78,7 @@ A Aplicação SmartHotel é composta por uma arquitetura em N camadas (N-Tier) n
 
 ![A slide shows the on-premises SmartHotel application architecture.](/AllFiles/Images/overview.png)
 
-1. Continua na próxima aula. Quarta (01/06) às 20h00 (horário de Brasília)
+Continua na próxima aula. Quarta (01/06) às 20h00 (horário de Brasília).
 
-Inscreva-se para receber os materiais extras e o link das próximas aulas. [Clicando aqui no link](htts://guilhermemaia.com/inscricoes-maratona-jun22)
+Inscreva-se para receber os materiais extras e o link das próximas aulas. [Clicando aqui](htts://guilhermemaia.com/inscricoes-maratona-jun22)
 
