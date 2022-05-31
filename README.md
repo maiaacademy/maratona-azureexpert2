@@ -7,7 +7,7 @@ Cadastre-se para receber os materiais extras e o link das próximas aulas:
 
 **Hands-on Lab**
 
-## Desafio 1 - Criação do ambiente de Aplicação (On-premises) no Azure (tempo estimado 30 a 60 minutos)
+## Desafio 1 - Criação do ambiente de Aplicação (On-premises) no Azure (tempo estimado de 30 a 60 minutos)
 
 Para realizar as atividades do Hands-on estamos utilizando o Portal do Azure em idioma Inglês a fim de manter o padrão e não haver erros, e se necessário você pode abrir o Google Tradutor e traduzir caso tenha alguma dificuldade no entendimento.
 
