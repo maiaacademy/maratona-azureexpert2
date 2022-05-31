@@ -1,6 +1,14 @@
 # Maratona Azure Expert 2.0
 
-Este é o repositório que contém os materiais das atividades, desafios e Hands-on da Maratona.
+Este é o repositório que contém os materiais de apoio da Maratona.
+
+**Fique por dentro da programação do evento**:
+
+- **AULA 1** - Segunda (30/05) às 20h00: https://youtu.be/Gyvi1VTwjGw
+- **AULA 2** - Quarta (01/06) às 20h00: https://youtu.be/1X9wFu7KafY
+- **AULA 3** - Sexta (03/06) às 20h00: https://youtu.be/xX5y_2o_jE4
+
+Aproveite e defina o lembrete das aulas pelo Youtube para ser notificado quando a aula começar.
 
 ## Desafio 1 - Criação do ambiente de Aplicação (On-premises) no Azure (tempo estimado de 30 a 60 minutos)
 
