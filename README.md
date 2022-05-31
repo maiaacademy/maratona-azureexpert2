@@ -80,5 +80,5 @@ A Aplicação SmartHotel é composta por uma arquitetura em N camadas (N-Tier) n
 
 Continua na próxima aula. Quarta (01/06) às 20h00 (horário de Brasília).
 
-Inscreva-se para receber os materiais extras e o link das próximas aulas. [Clicando aqui](htts://guilhermemaia.com/inscricoes-maratona-jun22)
+Inscreva-se para receber os materiais extras e o link das próximas aulas. [htts://guilhermemaia.com/inscricoes-maratona-jun22](htts://guilhermemaia.com/inscricoes-maratona-jun22).
 
