@@ -30,7 +30,7 @@ Para realizar as atividades do Hands-on estamos utilizando o Portal do Azure no 
 
         - Total Regional vCPUs: **at least 14 vCPUs**.
 
-    > **Note:** If you are using an Azure Pass subscription, you may not meet the vCPU quotas above. In this case, you can still complete the lab.
+     > **AVISO:** Se você está utilizando uma **assinatura gratuita (Trial)** ou **Azure Pass** você não vai conseguir aumentar o limite de processadores (vCPUs) e sendo necessário seguir as instruções abaixo na **NOTA IMPORTANTE.**
 
 ## Criação do ambiente da Aplicação completa (On-premises) para Cloud Azure
 
@@ -40,7 +40,9 @@ Para realizar as atividades do Hands-on estamos utilizando o Portal do Azure no 
 
     <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fcloudworkshop.blob.core.windows.net%2Fline-of-business-application-migration%2Fsept-2020%2FSmartHotelHost.json" target="_blank">![Button to deploy the SmartHotelHost template to Azure.](/AllFiles/Images/deploy-to-azure.png)</a>
 
-    > **Note:** The template will take around 6-7 minutes to deploy. Once template deployment is complete, several additional scripts are executed to bootstrap the lab environment. **Allow at least 1 hour from the start of template deployment for the scripts to run.**
+    **> NOTA IMPORTANTE:** Em caso de restrição de **Quota de vCPUs** ou **Restrição da região** mesmo selecionando outras regiões, você vai precisar alterar a quantidade de processadores devido a restrição de limites da assinatura Trial ou Azure Pass, iniciando novamente o processo de criação do template, selecionando em **"Edit template**, localizar a **linha 48** que contém **Standard_D8s_v3** e vai substituir para **Standard_D4s_v3**, e em seguida selecione **Save** e continue o processo de criação pelo template.
+
+    > **NOTA DE AVISO:** O Template uma vez executado levará cerca de 7 a 10 minutos para ser implantado. Após a conclusão da implantação do modelo, vários scripts adicionais são executados para configurar o ambiente da aplicação completa. **Aguarde pelo menos 1 hora a partir do início da implantação Template para que os scripts sejam executados.**
 
 ### Verifique o andamento da criação do ambiente da aplicação
 
