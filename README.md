@@ -1,6 +1,6 @@
 # Maratona Azure Expert 2.0
 
-Este é o repositório que contém as atividades e desafios da Maratona.
+Este é o repositório que contém os materiaias das atividades, desafios e Hands-on da Maratona.
 
 ## Desafio 1 - Criação do ambiente de Aplicação (On-premises) no Azure (tempo estimado de 30 a 60 minutos)
 
