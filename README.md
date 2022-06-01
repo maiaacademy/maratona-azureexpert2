@@ -43,11 +43,11 @@ Neste desafio você vai criar o ambiente da aplicação que vamos utilizar no pr
 
      > **NOTA:** Se você está utilizando uma **assinatura gratuita (Trial)** ou **Azure Pass** você não vai conseguir aumentar o limite de processadores (vCPUs) e sendo necessário seguir as instruções a seguir**
 
-### Criação do ambiente da Aplicação completa (On-premises) para Cloud
+### Criação do ambiente da Aplicação (On-premises)
 
 1. Deploy the template **SmartHotelHost.json** to a new resource group. This template deploys a virtual machine running nested Hyper-V, with 4 nested VMs. This comprises the 'on-premises' environment which you will assess and migrate during this lab.
 
-    You can deploy the template by selecting the 'Deploy to Azure' button below. You will need to create a new resource group **SmartHotel**. You will also need to select a location **East US**, **Central US**, **Australia ...**, **Canada ...**, **Europe ...** or other close to you to deploy the template to. Then choose **Review + create** followed by **Create**. 
+    You can deploy the template by selecting the 'Deploy to Azure' button below. You will need to create a new resource group **SmartHotelHost**. You will also need to select a location **East US**, **Central US**, **Australia ...**, **Canada ...**, **Europe ...** or other close to you to deploy the template to. Then choose **Review + create** followed by **Create**. 
 
     <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fcloudworkshop.blob.core.windows.net%2Fline-of-business-application-migration%2Fsept-2020%2FSmartHotelHost.json" target="_blank">![Button to deploy the SmartHotelHost template to Azure.](/AllFiles/Images/deploy-to-azure.png)</a>
 
@@ -61,7 +61,7 @@ Neste desafio você vai criar o ambiente da aplicação que vamos utilizar no pr
 
 1. In a separate browser tab, navigate to the **Azure portal**. In the global search box, enter **SmartHotelHost**, then select the SmartHotelHost virtual machine.
 
-1. Select **Connect**, select **RDP**, then download the RDP file and connect to the virtual machine using.
+1. Select **Connect**, select **RDP**, then download the RDP file and connect to the virtual machine using
         - Username: **demouser**
         - Password: **demo!pass123**
 
@@ -79,13 +79,13 @@ Assim que a Aplicação estiver funcionando para completar o desafio você vai p
 
 ## Arquitetura do Projeto Hands-on da Migração da Aplicação completa (On-premises) para o Azure
 
-A Aplicação SmartHotel é composta por uma arquitetura em N camadas (N-Tier) no Hyper-V.
+A Aplicação SmartHotel é composta por uma arquitetura de N camadas (N-Tier)
 
-- **Database tier**: **SmartHotelSQL1** é a VM da camada de Dados, executa o Windows Server 2016 e SQL Server 2017.
+- **Database tier**: **SmartHotelSQL1** é a VM da camada de Dados, executa o Windows Server 2016 e SQL Server 2017;
 
-- **Application tier**: **SmartHotelWeb2** é a VM da camada de Aplicação, executa o Windows Server 2012 R2 e IIS Server.
+- **Application tier**: **SmartHotelWeb2** é a VM da camada de Aplicação, executa o Windows Server 2012 R2 e IIS Server;
 
-- **Web tier**: **SmartHotelWeb1** é a VM da camada Web, executa o Windows Server 2012 R2 e IIS Server.
+- **Web tier**: **SmartHotelWeb1** é a VM da camada Web, executa o Windows Server 2012 R2 e IIS Server;
 
 - **Web proxy**: **UbuntuWAF** é a VM da camada de Proxy e Firewall (WAF), executa o Nginx no Ubuntu 18.04 LTS.
 
