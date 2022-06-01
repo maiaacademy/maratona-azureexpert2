@@ -1,8 +1,8 @@
 # Maratona Azure Expert 2.0
 
-Este é o repositório que contém os materiais de apoio da Maratona.
+Este é o repositório que contém os materiais de apoio da Maratona
 
-**Fique por dentro da programação do evento**, [clicando aqui!](https://guilhermemaia.com/programacao-maratona-jun22/) 
+**Fique por dentro da programação do evento**, [clicando aqui](https://guilhermemaia.com/programacao-maratona-jun22/) 
 
 - **AULA 1** - Segunda (30/05) às 20h00
 - **AULA 2** - Quarta (01/06) às 20h00
@@ -95,7 +95,7 @@ A Aplicação SmartHotel é composta por uma arquitetura em N camadas (N-Tier) n
 
 ...
 
-Inscreva-se para receber o link das próximas aulas: [Clicando aqui](https://guilhermemaia.com/inscricoes-maratona-jun22).
+Inscreva-se para receber o link das próximas aulas: [clicando aqui](https://guilhermemaia.com/inscricoes-maratona-jun22).
 
 
 
