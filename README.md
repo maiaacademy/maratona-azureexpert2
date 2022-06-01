@@ -2,7 +2,7 @@
 
 Este é o repositório que contém os materiais de apoio da Maratona.
 
-**Fique por dentro da programação do evento**, **[clicando aqui]**(https://guilhermemaia.com/programacao-maratona-jun22/) 
+**Fique por dentro da programação do evento**, [clicando aqui!](https://guilhermemaia.com/programacao-maratona-jun22/) 
 
 - **AULA 1** - Segunda (30/05) às 20h00
 - **AULA 2** - Quarta (01/06) às 20h00
@@ -81,13 +81,13 @@ Assim que a Aplicação estiver funcionando para completar o desafio você vai p
 
 A Aplicação SmartHotel é composta por uma arquitetura em N camadas (N-Tier) no Hyper-V.
 
-- **Database tier** **SmartHotelSQL1** é a VM da camada de Dados, executa o Windows Server 2016 e SQL Server 2017.
+- **Database tier**: **SmartHotelSQL1** é a VM da camada de Dados, executa o Windows Server 2016 e SQL Server 2017.
 
-- **Application tier** **SmartHotelWeb2** é a VM da camada de Aplicação, executa o Windows Server 2012 R2 e IIS Server.
+- **Application tier**: **SmartHotelWeb2** é a VM da camada de Aplicação, executa o Windows Server 2012 R2 e IIS Server.
 
-- **Web tier** **SmartHotelWeb1** é a VM da camada Web, executa o Windows Server 2012 R2 e IIS Server.
+- **Web tier**: **SmartHotelWeb1** é a VM da camada Web, executa o Windows Server 2012 R2 e IIS Server.
 
-- **Web proxy** **UbuntuWAF** é a VM da camada de Proxy e Firewall (WAF), executa o Nginx no Ubuntu 18.04 LTS.
+- **Web proxy**: **UbuntuWAF** é a VM da camada de Proxy e Firewall (WAF), executa o Nginx no Ubuntu 18.04 LTS.
 
 ![A slide shows the on-premises SmartHotel application architecture.](/AllFiles/Images/overview.png)
 
