@@ -91,9 +91,51 @@ A Aplicação SmartHotel é composta por uma arquitetura de N camadas (N-Tier)
 
 ![A slide shows the on-premises SmartHotel application architecture.](/AllFiles/Images/overview.png)
 
-## Desafio 2 - Implantação do ambiente no Azure do Z (tempo estimado de 60 minutos a 120 minutos)
+## Desafio 2 - Implantação do ambiente no Azure do Zero (tempo estimado de 30 minutos a 60 minutos)
 
-...
+Neste desafio você vai criar o ambiente no Azure do ZERO dentro das boas práticas de Landing Zone que vamos utilizar no projeto de migração.
+
+1. No Portal do Azure, criar o **Resource group** "RG-SmartHotel" e associar as TAGs;
+
+     > **NOTA:** Se você estiver utilizando uma assinatura Trial ou Azure Pass, criar em um região diferente que provisionou o ambiente (On-premises) e que não tenha restrição de vCPUs na região.
+
+1. Provisionar a **Virtual Network** "VNET-SmartHotel" com o Adress space "192.168.0.6" e as respectivas Sub-nets:
+    - SmartHotelWeb: 192.168.0.0/26
+    - SmartHotelDB: 192.168.0.128/26
+
+1. Criar o **Azure Private DNS** com o domínio interno da rede e associar a VNET;
+
+1. Criar a **Storage Account** para Logs de Diagnóstico "sasmarthotel####";
+
+1. Provisionar o **Log Analytics** para Logs;
+
+1. Implantar a sua primeira VM **(Virtual Machine)** "SRVWEB01" no Azure com Windows Server 2019 (disco Small Disk):
+    - Alterar da Interface de rede para estático;
+    - Adicionar um novo disco de dados;
+    - Instalar a função de Web Server do IIS por meio do Script abaixo de Powershell:
+
+```powershell
+    # # Install IIS Web server role
+    Install-WindowsFeature -name Web-Server -IncludeManagementTools
+
+    # Remove default htm file
+    Remove-item  C:\inetpub\wwwroot\iisstart.htm
+
+    # Add a new htm file that displays server name
+    Add-Content -Path "C:\inetpub\wwwroot\iisstart.htm" -Value $("O meu primeiro ambiente no Azure: " + $env:computername)
+   ```
+
+1. Liberar o acesso HTTP para internet na regra do **Network Security Group**;
+
+1. Testar o acesso da página do servidor Web.
+
+Assim que estiver funcionando para completar o desafio você vai postar o **Print das evidências do ambiente e a imagem do Badge** ([Clique aqui para baixar](https://guilhermemaia.com/badge-desafio2)) **com a Hastash** #MaratonaAzureExpert2 #Desafio2 **no Linkedin**.
+
+> **NOTA:** Por fim você vai **apagar a VM criada** e seus respectivos recursos dela (Discos, Interface de rede e IP).
+
+## Projeto - Migração do ambiente da Aplicação completa (On-premises) para o Azure (tempo estimado de 60 minutos a 120 minutos)
+
+Continua na próxima aula (03/06) às 20h00...
 
 Inscreva-se para receber o link das próximas aulas: [clicando aqui](https://guilhermemaia.com/inscricoes-maratona-jun22).
 
