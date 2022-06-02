@@ -99,7 +99,7 @@ Neste desafio você vai criar o ambiente no Azure do ZERO dentro das boas práti
 
      > **NOTA:** Se você estiver utilizando uma assinatura Trial ou Azure Pass, criar em um região diferente que provisionou o ambiente (On-premises) e que não tenha restrição de vCPUs na região.
 
-1. Provisionar a **Virtual Network (VNET)**: "VNET-SmartHotel" com o Adress space "192.168.0.6" e as respectivas **Subnets**:
+1. Provisionar a **Virtual Network (VNET)**: "VNET-SmartHotel" com o Adress space "192.168.0.0/16" e as respectivas **Subnets**:
     - SmartHotelWeb: 192.168.0.0/26
     - SmartHotelDB: 192.168.0.128/26
 
