@@ -75,7 +75,7 @@ Neste desafio você vai criar o ambiente da aplicação que vamos utilizar no pr
 
     ![Browser screenshot showing the SmartHotel application.](/AllFiles/Images/smarthotel.png)
 
-Assim que a Aplicação estiver funcionando para completar o desafio você vai postar o **Print das evidências do ambiente e a imagem do Badge** da Maratona ([clique aqui para baixar](https://guilhermemaia.com/badge-maratona)) **com a Hastash** #MaratonaAzureExpert2 #Desafio1 **no Linkedin**.
+Assim que a Aplicação estiver funcionando para completar o desafio você vai postar o **Print das evidências do ambiente e a imagem do Badge** da Maratona ([clique aqui para baixar](https://guilhermemaia.com/badge-maratona)) **com a Hastash #MaratonaAzureExpert2 #Desafio1 no Linkedin**.
 
 ## Arquitetura do Projeto Hands-on da Migração da Aplicação completa (On-premises) para o Azure
 
@@ -129,9 +129,9 @@ Neste desafio você vai criar o ambiente no Azure do ZERO dentro das boas práti
 
 1. Testar o acesso da página do servidor Web.
 
-Assim que estiver funcionando para completar o desafio você vai postar o **Print das evidências do ambiente e a imagem do Badge** ([clique aqui para baixar](https://guilhermemaia.com/badge-desafio2)) **com a Hastash** #MaratonaAzureExpert2 #Desafio2 **no Linkedin**.
+Assim que estiver funcionando para completar o desafio você vai postar o **Print das evidências do ambiente e a imagem do Badge** ([clique aqui para baixar](https://guilhermemaia.com/badge-desafio2)) **com a Hastash #MaratonaAzureExpert2 #Desafio2 no Linkedin**.
 
-> **NOTA:** Por fim você vai **apagar a VM criada** e seus respectivos recursos dela (Discos, Interface de rede e IP).
+> **NOTA:** Por fim você vai **apagar a VM criada** e seus respectivos recursos dela (Discos, IP público,  Interface de rede e NSG).
 
 ## Projeto - Migração do ambiente da Aplicação completa (On-premises) para o Azure (tempo estimado de 60 minutos a 120 minutos)
 
