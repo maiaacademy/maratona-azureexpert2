@@ -75,7 +75,7 @@ Neste desafio você vai criar o ambiente da aplicação que vamos utilizar no pr
 
     ![Browser screenshot showing the SmartHotel application.](/AllFiles/Images/smarthotel.png)
 
-Assim que a Aplicação estiver funcionando para completar o desafio você vai postar o **Print das evidências do ambiente e a imagem do Badge** da Maratona ([Clique aqui para baixar](https://guilhermemaia.com/badge-maratona)) **com a Hastash** #MaratonaAzureExpert2 #Desafio1 **no Linkedin**.
+Assim que a Aplicação estiver funcionando para completar o desafio você vai postar o **Print das evidências do ambiente e a imagem do Badge** da Maratona ([clique aqui para baixar](https://guilhermemaia.com/badge-maratona)) **com a Hastash** #MaratonaAzureExpert2 #Desafio1 **no Linkedin**.
 
 ## Arquitetura do Projeto Hands-on da Migração da Aplicação completa (On-premises) para o Azure
 
@@ -95,21 +95,21 @@ A Aplicação SmartHotel é composta por uma arquitetura de N camadas (N-Tier)
 
 Neste desafio você vai criar o ambiente no Azure do ZERO dentro das boas práticas de Landing Zone que vamos utilizar no projeto de migração.
 
-1. No Portal do Azure, criar o **Resource group** "RG-SmartHotel" e associar as TAGs;
+1. No Portal do Azure, criar o **Resource group**: "RG-SmartHotel" e associar as TAGs;
 
      > **NOTA:** Se você estiver utilizando uma assinatura Trial ou Azure Pass, criar em um região diferente que provisionou o ambiente (On-premises) e que não tenha restrição de vCPUs na região.
 
-1. Provisionar a **Virtual Network** "VNET-SmartHotel" com o Adress space "192.168.0.6" e as respectivas Sub-nets:
+1. Provisionar a **Virtual Network (VNET)**: "VNET-SmartHotel" com o Adress space "192.168.0.6" e as respectivas **Subnets**:
     - SmartHotelWeb: 192.168.0.0/26
     - SmartHotelDB: 192.168.0.128/26
 
-1. Criar o **Azure Private DNS** com o domínio interno da rede e associar a VNET;
+1. Criar o **Azure Private DNS** com o domínio interno da rede: "smarthotel.corp" e associar a VNET;
 
-1. Criar a **Storage Account** para Logs de Diagnóstico "sasmarthotel####";
+1. Criar a **Storage Account** para Logs de Diagnóstico: "sasmarthotel####";
 
-1. Provisionar o **Log Analytics** para Logs;
+1. Provisionar o **Log Analytics** para monitoramento e Logs: "law-smarhotel####";
 
-1. Implantar a sua primeira VM **(Virtual Machine)** "SRVWEB01" no Azure com Windows Server 2019 (disco Small Disk):
+1. Implantar a sua primeira **Virtual Machine (VM)**: "SRVWEB01" no Azure com tamanho de 4GB e 2 vCPUS e o Windows Server 2019 (disco Small Disk):
     - Alterar da Interface de rede para estático;
     - Adicionar um novo disco de dados;
     - Instalar a função de Web Server do IIS por meio do Script abaixo de Powershell:
@@ -129,7 +129,7 @@ Neste desafio você vai criar o ambiente no Azure do ZERO dentro das boas práti
 
 1. Testar o acesso da página do servidor Web.
 
-Assim que estiver funcionando para completar o desafio você vai postar o **Print das evidências do ambiente e a imagem do Badge** ([Clique aqui para baixar](https://guilhermemaia.com/badge-desafio2)) **com a Hastash** #MaratonaAzureExpert2 #Desafio2 **no Linkedin**.
+Assim que estiver funcionando para completar o desafio você vai postar o **Print das evidências do ambiente e a imagem do Badge** ([clique aqui para baixar](https://guilhermemaia.com/badge-desafio2)) **com a Hastash** #MaratonaAzureExpert2 #Desafio2 **no Linkedin**.
 
 > **NOTA:** Por fim você vai **apagar a VM criada** e seus respectivos recursos dela (Discos, Interface de rede e IP).
 
