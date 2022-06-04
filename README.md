@@ -226,7 +226,7 @@ Assim que estiver funcionando para completar o desafio você vai postar o **Prin
 
 Continua no **Treinamento Azure Expert 2.0**.
 
-Entre no Grupo Exclusivo de WhatsApp para ser avisado das inscrições do **Azure Expert 2.0** na segunda (06/06) às 08h00: [clicando aqui](https://guilhermemaia.com/grupo-maratona).
+Entre no Grupo Exclusivo de WhatsApp para ser avisado das inscrições do **Azure Expert 2.0** na segunda (06/06) às 08h00, [clicando aqui](https://guilhermemaia.com/grupo-maratona).
 
 
 
