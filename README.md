@@ -2,13 +2,15 @@
 
 Este é o repositório que contém os materiais de apoio da Maratona
 
-**Fique por dentro da programação do evento**, [clicando aqui](https://guilhermemaia.com/programacao-maratona-jun22/) 
+**Fique por dentro da programação do evento**:
 
 - **AULA 1** - Segunda (30/05) às 20h00
 - **AULA 2** - Quarta (01/06) às 20h00
 - **AULA 3** - Sexta (03/06) às 20h00
 
-**Aproveite e defina o lembrete das aulas** no Youtube para ser notificado quando a aula começar.
+AGORA, você pode assistir todas as aulas da Maratona, [clicando aqui!](https://guilhermemaia.com/aulas-maratona-jun22) 
+
+**Aproveite para assistir e colocar em prática os desafios**, antes que aulas saiam do ar.
 
 ## Arquitetura do Projeto Hands-on da Migração da Aplicação completa (On-premises) para o Azure
 
