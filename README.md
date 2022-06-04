@@ -7,9 +7,22 @@ Este é o repositório que contém os materiais de apoio da Maratona
 - **AULA 1** - Segunda (30/05) às 20h00
 - **AULA 2** - Quarta (01/06) às 20h00
 - **AULA 3** - Sexta (03/06) às 20h00
-- **AULA 4** - Domingo (05/06) às 20h00
 
 **Aproveite e defina o lembrete das aulas** no Youtube para ser notificado quando a aula começar.
+
+## Arquitetura do Projeto Hands-on da Migração da Aplicação completa (On-premises) para o Azure
+
+A Aplicação SmartHotel é composta por uma arquitetura de N camadas (N-Tier)
+
+- **Database tier**: **SmartHotelSQL1** é a VM da camada de Dados, executa o Windows Server 2016 e SQL Server 2017;
+
+- **Application tier**: **SmartHotelWeb2** é a VM da camada de Aplicação, executa o Windows Server 2012 R2 e IIS Server;
+
+- **Web tier**: **SmartHotelWeb1** é a VM da camada Web, executa o Windows Server 2012 R2 e IIS Server;
+
+- **Web proxy**: **UbuntuWAF** é a VM da camada de Proxy e Firewall (WAF), executa o Nginx no Ubuntu 18.04 LTS.
+
+![A slide shows the on-premises SmartHotel application architecture.](/AllFiles/Images/overview.png)
 
 Para realizar as atividades do Hands-on estamos utilizando o Portal do Azure no idioma Inglês a fim de manter o padrão e não haver erros, e se necessário você pode abrir o Google Tradutor e traduzir caso tenha alguma dificuldade no entendimento.
 
@@ -77,20 +90,6 @@ Neste desafio você vai criar o ambiente da aplicação que vamos utilizar no pr
 
 Assim que a Aplicação estiver funcionando para completar o desafio você vai postar o **Print das evidências do ambiente e a imagem do Badge** da Maratona ([clique aqui para baixar](https://guilhermemaia.com/badge-maratona)) **com a Hastash #MaratonaAzureExpert2 #Desafio1 no Linkedin**.
 
-## Arquitetura do Projeto Hands-on da Migração da Aplicação completa (On-premises) para o Azure
-
-A Aplicação SmartHotel é composta por uma arquitetura de N camadas (N-Tier)
-
-- **Database tier**: **SmartHotelSQL1** é a VM da camada de Dados, executa o Windows Server 2016 e SQL Server 2017;
-
-- **Application tier**: **SmartHotelWeb2** é a VM da camada de Aplicação, executa o Windows Server 2012 R2 e IIS Server;
-
-- **Web tier**: **SmartHotelWeb1** é a VM da camada Web, executa o Windows Server 2012 R2 e IIS Server;
-
-- **Web proxy**: **UbuntuWAF** é a VM da camada de Proxy e Firewall (WAF), executa o Nginx no Ubuntu 18.04 LTS.
-
-![A slide shows the on-premises SmartHotel application architecture.](/AllFiles/Images/overview.png)
-
 ## Desafio 2 - Implantação do ambiente no Azure do Zero (tempo estimado de 30 minutos a 60 minutos)
 
 Neste desafio você vai criar o ambiente no Azure do ZERO dentro das boas práticas de Landing Zone que vamos utilizar no projeto de migração.
@@ -135,9 +134,99 @@ Assim que estiver funcionando para completar o desafio você vai postar o **Prin
 
 ## Projeto - Migração do ambiente da Aplicação completa (On-premises) para o Azure (tempo estimado de 60 minutos a 120 minutos)
 
-Continua na próxima aula (03/06) às 20h00...
+Neste projeto vamos fazer juntos a Migração e modernização na 100% prática de uma Aplicações real no Azure.
 
-Inscreva-se para receber o link das próximas aulas: [clicando aqui](https://guilhermemaia.com/inscricoes-maratona-jun22).
+1. No Portal do Azure, você vai criar um novo projeto no **Azure Migrate**;
+
+1. Adicionar as ferramentas (Tools) de Assessment e Migration para **Servers e Database**;
+
+1. Configurar o Azure Migrate para migração de **Servers**;
+
+1. Gerar a chave do Applicance do Azure Migrate para migração de **Azure VMs** do Hyper-V;
+
+1. Conectar no **SmartHotelHost**, baixar e/ou importar a VM de Applicance do Azure Migrate no Hyper-V;
+
+1. Iniciar o Appliance no Hyper-V para configuração do Azure Migrate na rede "AzureMigrateSwitch";
+
+1. Configurar o Applicance com a chave gerada do Azure Migrate, credencial do Azure e credencial do **SmartHotelHost**;
+
+1. Iniciar a descoberta do Assessment no Appliance;
+
+1. Ir ao Portal do Azure, criar Assessment dos servidores (VMs): **SmartHotelWeb2**, **SmartHotelWeb1** e **UbuntuWAF** para a regão de destino da migração no Azure e explorar dos cenários;
+
+1. OPCIONAL: Configurar as dependências de aplicações do **Dependencies agent** nas VMs;
+
+- Fazer o deploy do serviço **Azure Database Migration Service (DMS)** na região do SmartHotelHost e selecionar a rede **DMSvnet/DMS** do ambiente On-premises, e enquanto provisiona seguir com as atividades abaixo;
+
+1. Voltar ao **SmartHotelHost** e instalar o .Net 4.8 no SmartHotelHost e reiniciar o host: 
+https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48
+
+1. Instalar o Microsoft Data Migration Assistant no **SmartHotelHost**;
+
+1. Criar o projeto de Assessment do SQL Server e seguindo os parêmetros:
+
+    - Server name: 192.168.0.6
+    - Username: sa
+    - Password: demo!pass123
+
+1. Conectar ao Azure com sua credencial para o envio dos dados do Assessment do SQL Server;
+
+1. No Portal do Azure, criar o **Azure SQL Database** com size baseado em DTU e Basic na região de destino que será migrado para o Azure;
+
+1. Uma vez que finalizado a criação do **Azure Database Migration Service (DMS)**, configurar o Private Endpoint do **Azure SQL Database** para a rede **DMSvnet/DMS**;
+
+1. Criar novo projeto de Migração no **DMS**;
+
+1. Fazer a migração do Schema do SQL Server para o Azure e seguindo os parêmetros
+    - Source SQL Server: 10.0.0.4 (O IP que faz o NAT para o SQL Server)
+    - Destination Azure SQL Database: O endereço do SQL Database criado **.*database.windows.net**
+
+1. Fazer a migração dos Dados do SQL Server para o Azure;
+
+1. Remover o **Private Endpoint** da rede DMSvnet do **Azure SQL Database server**;
+
+1. Criar o Private Endpoint para rede de destino no Azure;
+
+1. Criar a **Storage Account** para replicação dos servidores na região de destino no Azure e desabilitar o "Soft delete";
+
+1. Configurar a migração de **Servers** de VMs do Hyper-V no **Azure Migrate**;
+
+1. Baixar e instalar o agente do Azure Site Recovery no **SmarHotelHost** e importar a respectiva chave;
+
+1. Finalizar a configuração da migração de Servers no **Azure Migrate**;
+
+1. Fazer a replicação dos servidores **SmarHotelWeb1**, **SmartHotelWeb2** e **UbuntuWAF** para a regão de destino no Azure;
+
+1. Ajustar as configurações do tamanho das VMs replicadas e a rede seguindo os parêmetros de IPs:
+    - SmarHotelWeb1:  192.168.0.4
+    - SmarHotelWeb2:  192.168.0.5
+    - UbuntuWAF:  192.168.0.8
+
+1. Realizar o **Migrate** para realização da migração dos servidores para o Azure;
+
+1. No **Azure SQL Database**, copiar a **Connection string** no Notepad e adicionar a senha do banco;
+
+1. OPCIONAL: Fazer o deploy do Azure Bastion;
+
+1. Adicionar o **Public IP** na interface de rede da VM **SmartHotelWeb2** e adicionar o **Network Securty Group** para liberar a porta 3389 (RDP);
+
+1. Connectar no **SmartHotelWeb2** e navegar no caminho **C:\inetpub\SmartHotel.Registration.Wcf**, abrir o arquivo **Web.config** com o Notepad;
+
+1. Atualizar com a **Connection String** do Azure SQL Database e reiniciar o serviço do **IIS Server**
+
+1. Adicionar o **Public IP** na interface de rede da VM **UbuntuWAF** e adicionar o **Network Securty Group** para liberar a porta 80 (RDP);
+
+1. OPCIONAL: Fazer o deploy do **Application Gateway** para substituir o WAF da VM de **UbuntuWAF** e habilitar o modo de prevenção do WAF;
+
+1. Testar o acesso a Aplicação SmartHotel por meio do IP da VM de **UbuntuWAF** ou **Application Gateway**.
+
+Assim que estiver funcionando para completar o desafio você vai postar o **Print das evidências do ambiente e a imagem do Badge** ([clique aqui para baixar](https://guilhermemaia.com/badge-projeto)) **com a Hastash #MaratonaAzureExpert2 #Projeto no Linkedin**.
+
+> **NOTA:** Por fim ao final do projeto você vai apagar os **Resource groups** provisionados **SmartHotelHost** e **RG-SmartHotel** e seus respectivos recursos associados.
+
+Continua no **Treinamento Azure Expert 2.0**.
+
+Entre no Grupo Exclusivo de WhatsApp para ser avisado das inscrições do **Azure Expert 2.0** na segunda (06/06) às 08h00: [clicando aqui](https://guilhermemaia.com/grupo-maratona).
 
 
 
