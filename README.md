@@ -222,7 +222,7 @@ https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48
 
 Assim que estiver funcionando para completar o desafio você vai postar o **Print das evidências do ambiente e a imagem do Badge** ([clique aqui para baixar](https://guilhermemaia.com/badge-projeto)) **com a Hastash #MaratonaAzureExpert2 #Projeto no Linkedin**.
 
-> **NOTA:** Por fim ao final do projeto você vai apagar os **Resource groups** provisionados **SmartHotelHost** e **RG-SmartHotel** e seus respectivos recursos associados.
+> **NOTA:** Por fim a conclusão do projeto você vai apagar os **Resource groups** provisionados **SmartHotelHost** e **RG-SmartHotel** e seus respectivos recursos associados.
 
 Continua no **Treinamento Azure Expert 2.0**.
 
