@@ -156,7 +156,7 @@ Neste projeto vamos fazer juntos a Migração e modernização na 100% prática 
 
 1. OPCIONAL: Configurar as dependências de aplicações do **Dependencies agent** nas VMs;
 
-- Fazer o deploy do serviço **Azure Database Migration Service (DMS)** na região do SmartHotelHost e selecionar a rede **DMSvnet/DMS** do ambiente On-premises, e enquanto provisiona seguir com as atividades abaixo;
+1. Fazer o deploy do serviço **Azure Database Migration Service (DMS)** na região do SmartHotelHost e selecionar a rede **DMSvnet/DMS** do ambiente On-premises, e enquanto provisiona seguir com as atividades abaixo;
 
 1. Voltar ao **SmartHotelHost** e instalar o .Net 4.8 no SmartHotelHost e reiniciar o host: 
 https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48
